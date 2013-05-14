@@ -1,0 +1,27 @@
+{
+  "author": "Tessa Harmon",
+  "name": "brunch-stylus-jade",
+  "description": "Minimal brunch template with stylus and jade.",
+  "version": "1.5.4",
+  "homepage": "http://www.tessaharmon.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TessaHarmon/brunch-jade-stylus"
+  },
+  "engines": {
+    "node": "~0.6.10 || 0.8 || 0.9"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "javascript-brunch": ">= 1.0 < 1.6",
+    "css-brunch": ">= 1.0 < 1.6",
+    "uglify-js-brunch": ">= 1.0 < 1.6",
+    "clean-css-brunch": ">= 1.0 < 1.6",
+    "stylus-brunch": "~1.6.1",
+    "static-jade-brunch": "~1.4.11"
+  },
+  "devDependencies": {}
+}
