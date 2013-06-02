@@ -1,5 +1,9 @@
 exports.config =
   # See http://brunch.readthedocs.org/en/latest/config.html for documentation.
+  plugins:
+    static_jade:
+      extension: ".static.jade"
+
   files:
     javascripts:
       joinTo:
@@ -18,5 +22,6 @@ exports.config =
         before: []
         after: []
 
+    # Ensure that our jade templates don't get compiled into our app JS.
     templates:
-      joinTo: 'javascripts/app.js'
+      joinTo: 'javascripts/template.js'

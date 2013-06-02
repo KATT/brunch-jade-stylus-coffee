@@ -23,5 +23,7 @@
     "stylus-brunch": "~1.6.1",
     "static-jade-brunch": "~1.4.11"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jade-brunch": "~1.5.1"
+  }
 }
