@@ -1,4 +1,4 @@
 brunch-jade-stylus
 ==================
 
-Brunch skeleton incorporating jade and stylus.
+Brunch skeleton including jade and stylus with some sensible defaults, like nib and normalize.css.
