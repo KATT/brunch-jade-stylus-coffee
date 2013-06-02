@@ -1,4 +1,5 @@
-brunch-jade-stylus
-==================
+Brunch with Jade and Stylus
+===========================
 
-Brunch skeleton including jade and stylus with some sensible defaults, like nib and normalize.css.
+Super minimal brunch skeleton that includes jade and stylus plugins. Based on monokrome's excellent "brunch with brunch" template.
+
