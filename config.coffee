@@ -25,3 +25,7 @@ exports.config =
     # Ensure that our jade templates don't get compiled into our app JS.
     templates:
       joinTo: 'javascripts/template.js'
+  modules:
+    nameCleaner: (path) ->
+      path = path.replace(/^app\//, '')
+      path = path.replace(/^javascripts\//, '')

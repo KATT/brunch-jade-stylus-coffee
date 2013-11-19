@@ -1,5 +1,6 @@
-Brunch with Jade and Stylus
+Brunch with Jade, Stylus & CoffeeScript
 ===========================
 
-Super minimal brunch skeleton that includes jade and stylus plugins. Based on monokrome's excellent "brunch with brunch" template.
+Super minimal brunch skeleton that includes jade and stylus plugins. 
 
+Forked from [brunch-jade-stylus](https://github.com/TessaHarmon/brunch-jade-stylus) with CoffeeScript added.

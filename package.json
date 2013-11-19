@@ -1,12 +1,12 @@
 {
-  "author": "Tessa Harmon",
-  "name": "brunch-stylus-jade",
-  "description": "Minimal brunch template with stylus and jade.",
-  "version": "1.5.4",
-  "homepage": "http://www.tessaharmon.com/",
+  "author": "Alexander Johansson",
+  "name": "brunch-stylus-jade-coffee",
+  "description": "Minimal brunch template with stylus, jade & coffeee.",
+  "version": "1.0.0",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TessaHarmon/brunch-jade-stylus"
+    "url": "https://github.com/KATT/brunch-jade-stylus-coffee"
   },
   "engines": {
     "node": "~0.6.10 || 0.8 || 0.9"
@@ -16,12 +16,16 @@
     "test": "brunch test"
   },
   "dependencies": {
-    "javascript-brunch": ">= 1.0 < 1.6",
-    "css-brunch": ">= 1.0 < 1.6",
-    "uglify-js-brunch": ">= 1.0 < 1.6",
-    "clean-css-brunch": ">= 1.0 < 1.6",
-    "stylus-brunch": "~1.6.1",
-    "static-jade-brunch": "~1.4.11"
+    "javascript-brunch": ">= 1.0 < 1.8",
+    "coffee-script-brunch": ">= 1.0 < 1.8",
+
+    "css-brunch": ">= 1.0 < 1.8",
+    "stylus-brunch": ">= 1.0 < 1.8",
+
+    "static-jade-brunch": "~1.7.0",
+
+    "uglify-js-brunch": ">= 1.0 < 1.8",
+    "clean-css-brunch": ">= 1.0 < 1.8"
   },
   "devDependencies": {
     "jade-brunch": "~1.5.1"

@@ -14,3 +14,7 @@ results
 node_modules
 npm-debug.log
 public
+
+/app/assets/index.html
+
+*.sublime-workspace
