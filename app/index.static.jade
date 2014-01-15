@@ -1,4 +1,4 @@
-!!! 5
+doctype html
 // if IE 6
   <html id="ie6" lang="en">
 // if IE 7
@@ -14,15 +14,17 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     title My Awesome App
-    
+
     link(rel='stylesheet', href='stylesheets/app.css', type='text/css')
   body
     h1 Brunch-jade-stylus
     p This allows you to use index.static.jade instead of index.html for brunch!
+
     //- Include your templates here, like:
     include templates/additional-content.jade
 
+    script(src='javascripts/vendor.js')
     script(src='javascripts/app.js')
-    script
+    script.
       require('initialize');
-      
+

@@ -2,7 +2,7 @@
   "author": "Alexander Johansson",
   "name": "brunch-stylus-jade-coffee",
   "description": "Minimal brunch template with stylus, jade & coffeee.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "",
   "repository": {
     "type": "git",
@@ -16,18 +16,14 @@
     "test": "brunch test"
   },
   "dependencies": {
+    "jade-brunch": "~1.5.1",
     "javascript-brunch": ">= 1.0 < 1.8",
-    "coffee-script-brunch": ">= 1.0 < 1.8",
-
-    "css-brunch": ">= 1.0 < 1.8",
-    "stylus-brunch": ">= 1.0 < 1.8",
-
+    "coffee-script-brunch": "~1.7.3",
+    "css-brunch": "~1.7.0",
+    "stylus-brunch": "~1.7.0",
     "static-jade-brunch": "~1.7.0",
-
-    "uglify-js-brunch": ">= 1.0 < 1.8",
-    "clean-css-brunch": ">= 1.0 < 1.8"
-  },
-  "devDependencies": {
-    "jade-brunch": "~1.5.1"
+    "uglify-js-brunch": "~1.7.6",
+    "clean-css-brunch": "~1.7.1",
+    "auto-reload-brunch": "~1.7.1"
   }
 }

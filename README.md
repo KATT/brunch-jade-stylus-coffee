@@ -17,7 +17,7 @@ Forked from [brunch-jade-stylus](https://github.com/TessaHarmon/brunch-jade-styl
  
 ## Plugins
 
- -
+- [Brunch Auto-Reload](https://github.com/brunch/auto-reload-brunch)
 
 
 ## Getting started
