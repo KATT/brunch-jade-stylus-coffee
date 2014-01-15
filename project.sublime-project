@@ -16,6 +16,14 @@
 		{
 			"folder_exclude_patterns":
 			[
+				".*"
+			],
+			"path": "./vendor",
+			"name": "vendor"
+		},
+		{
+			"folder_exclude_patterns":
+			[
 				"*"
 			],
 			"path": "./",
