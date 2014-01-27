@@ -3,6 +3,10 @@ exports.config =
   plugins:
     static_jade:
       extension: ".static.jade"
+    stylus:
+      paths: [
+        './app/assets/images',
+      ]
 
   files:
     javascripts:
