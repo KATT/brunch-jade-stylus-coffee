@@ -1,0 +1,38 @@
+// Mixins
+
+
+// Responsive image created by div element using a CSS-hack.
+// Create a wrapper element with max-width = image width, insert an elmenet using responsive-image and watch the magic
+// @link https://gist.github.com/KATT/8283246
+responsive-image($image) {
+  $ext = extname($image);
+  $image2x = pathjoin(dirname($image), basename($image, $ext) + '@2x' + $ext);
+
+  box-sizing: content-box;
+
+  $size = image-size($image);
+
+  padding-top: unit(($size[1] / $size[0])*100, '%');
+  background-image: url($public-image-path + $image);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media $retina {
+    background-image: url($public-image-path + $image2x);
+  }
+}
+
+// Pass in image name as
+// background-image: 'logo.png'; and make sure that you also have logo@2x.png in same folder
+// @link https://gist.github.com/KATT/8470648
+background-x2image($image) {
+  $ext = extname($image);
+  $image2x = pathjoin(dirname($image), basename($image, $ext) + '@2x' + $ext);
+
+  background-image: url($public-image-path + $image);
+
+  @media $retina {
+    background-image: url($public-image-path + $image2x);
+  }
+}
+
