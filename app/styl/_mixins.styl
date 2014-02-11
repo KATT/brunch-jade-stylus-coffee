@@ -1,26 +1,41 @@
 // Mixins
 
+// Uses CSS hack in order to make an element maintain the aspect ratio of supplied background-image
+// Latest version available @ https://gist.github.com/KATT/8283246
+// Demo @ http://codepen.io/KATT/pen/yBrni
+responsive-image($image, $width = false, $height = false) {
+  $external = match('^https?:\/\/', $image);
+  error('expect width and height on external images') if $external and !($width or $height)
 
-// Responsive image created by div element using a CSS-hack.
-// Create a wrapper element with max-width = image width, insert an elmenet using responsive-image and watch the magic
-// @link https://gist.github.com/KATT/8283246
-responsive-image($image) {
-  $ext = extname($image);
-  $image2x = pathjoin(dirname($image), basename($image, $ext) + '@2x' + $ext);
+  unless $width and $height {
+    $size = image-size($image);
+    $width = $size[0];
+    $height = $size[1];
+  }
+  if !$external and $public-image-path is defined {
+    $image = $public-image-path + $image
+  }
+
 
   box-sizing: content-box;
-
-  $size = image-size($image);
-
-  padding-top: unit(($size[1] / $size[0])*100, '%');
-  background-image: url($public-image-path + $image);
+  padding-top: unit($height / $width*100, '%');
+  background-image: url($image);
   background-repeat: no-repeat;
+  background-size: $width $height;
   background-size: contain;
 
-  @media $retina {
-    background-image: url($public-image-path + $image2x);
+  if !$external and $public-image-path is defined and $retina is defined {
+    $extension = extname($image);
+    $image2x = pathjoin(dirname($image), basename($image, $extension) + '@2x' + $extension);
+
+
+    @media $retina {
+      background-image: url($image2x);
+    }
   }
 }
+
+
 
 // Pass in image name as
 // background-image: 'logo.png'; and make sure that you also have logo@2x.png in same folder
