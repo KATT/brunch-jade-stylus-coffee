@@ -23,10 +23,7 @@ Forked from [brunch-jade-stylus](https://github.com/TessaHarmon/brunch-jade-styl
 ## Getting started
 
 ```bash
-mkdir <projectName>
-cd <projectName>
-brunch new gh:KATT/brunch-jade-stylus-coffee
-npm install
+brunch new <projectName> -s gh:KATT/brunch-jade-stylus-coffee
 brunch w -s
 ```
 
